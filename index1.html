@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Coffee House</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5efe6;
+            color: #3e2723;
+        }
+
+        /* Header */
+        header {
+            background: #3e2723;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        /* Navigation */
+        nav {
+            background: #6d4c41;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffd180;
+        }
+
+        /* Menu */
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .title h2 {
+            font-size: 32px;
+        }
+
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            font-size: 22px;
+        }
+
+        .card p {
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            font-size: 20px;
+            font-weight: bold;
+            color: #8d6e63;
+        }
+
+        /* Footer */
+        footer {
+            background: #3e2723;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 30px;
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 32px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>☕ Coffee House</h1>
+        <p>Fresh Coffee • Good Vibes • Every Day</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#coffee">Coffee</a>
+        <a href="#matcha">Matcha</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+
+    <!-- Coffee Menu -->
+    <section class="container" id="coffee">
+
+        <div class="title">
+            <h2>☕ Coffee Menu</h2>
+            <p>Our favorite coffee drinks</p>
+        </div>
+
+        <div class="menu">
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=800&q=80">
+
+                <div class="card-content">
+                    <h3>Iced Latte</h3>
+                    <p>Espresso with fresh milk and ice.</p>
+                    <div class="price">$3.50</div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80">
+
+                <div class="card-content">
+                    <h3>Americano</h3>
+                    <p>Rich espresso with water.</p>
+                    <div class="price">$3.00</div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1572449043416-55f4685c9bb7?auto=format&fit=crop&w=800&q=80">
+
+                <div class="card-content">
+                    <h3>Cappuccino</h3>
+                    <p>Espresso with steamed milk and foam.</p>
+                    <div class="price">$3.50</div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1579306194872-64d3f2d0c6f5?auto=format&fit=crop&w=800&q=80">
+
+                <div class="card-content">
+                    <h3>Caramel Macchiato</h3>
+                    <p>Espresso, milk and caramel.</p>
+                    <div class="price">$4.00</div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1578374173705-4f7f8f8f4e4f?auto=format&fit=crop&w=800&q=80">
+
+                <div class="card-content">
+                    <h3>Mocha</h3>
+                    <p>Espresso with chocolate and milk.</p>
+                    <div class="price">$4.00</div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=800&q=80">
+
+                <div class="card-content">
+                    <h3>Coconut Iced Coffee</h3>
+                    <p>Coffee with creamy coconut flavor.</p>
+                    <div class="price">$4.00</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Matcha Menu -->
+    <section class="container" id="matcha">
+
+        <div class="title">
+            <h2>🍵 Matcha Menu</h2>
+            <p>Premium matcha for your daily ritual</p>
+        </div>
+
+        <div class="menu">
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?auto=format&fit=crop&w=800&q=80">
+
+                <div class="card-content">
+                    <h3>Iced Matcha Latte</h3>
+                    <p>Premium matcha with fresh milk.</p>
+                    <div class="price">$4.00</div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1571934811356-5cc061b6821f?auto=format&fit=crop&w=800&q=80">
+
+                <div class="card-content">
+                    <h3>Strawberry Matcha</h3>
+                    <p>Matcha with strawberry and milk.</p>
+                    <div class="price">$5.00</div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1536256263959-770b48d82b0a?auto=format&fit=crop&w=800&q=80">
+
+                <div class="card-content">
+                    <h3>Coconut Matcha</h3>
+                    <p>Matcha with creamy coconut.</p>
+                    <div class="price">$5.00</div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1582793988951-9aed5509eb97?auto=format&fit=crop&w=800&q=80">
+
+                <div class="card-content">
+                    <h3>Matcha Cloud</h3>
+                    <p>Matcha topped with creamy foam.</p>
+                    <div class="price">$4.50</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Contact -->
+    <footer id="contact">
+        <h3>☕ Coffee House</h3>
+        <p>Fresh Coffee • Good Vibes • Every Day</p>
+        <p>Open: 8:00 AM - 9:00 PM</p>
+        <p>📍 Phnom Penh, Cambodia</p>
+    </footer>
+
+</body>
+</html>
